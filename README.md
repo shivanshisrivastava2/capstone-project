@@ -94,9 +94,8 @@ price = base_price × clip(norm_demand, 0, 2)
 
 ## References
 
-* [Pathway Docs](https://pathway.com/developers/)
-* [Panel + Bokeh Integration](https://panel.holoviz.org)
+
 * [Pathway Real-Time Windowing](https://pathway.com/developers/user-guide/windowing/)
-* [Bokeh Streaming](https://docs.bokeh.org/en/latest/docs/user_guide/streaming.html)
+
 
 
