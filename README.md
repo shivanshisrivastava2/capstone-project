@@ -1,11 +1,11 @@
 
-# 🚗 Real-Time Urban Parking Pricing Engine
+# Real-Time Urban Parking Pricing Engine
 
 A smart, real-time pricing system for 14 urban parking spaces built using **Pathway**, **Pandas**, and **Bokeh**. It dynamically adjusts parking fees based on demand, traffic, and real-world conditions — improving utilization and reducing congestion.
 
 ---
 
-## 📌 Overview
+## Overview
 
 In cities, fixed parking prices cause inefficiencies — either **overcrowding** or **underutilization**. This project introduces two models for **dynamic pricing**:
 
@@ -28,7 +28,7 @@ The system ingests **live data streams**, processes pricing decisions **on the f
 
 ---
 
-## 🧠 Architecture Diagram
+## Architecture Diagram
 
 ```mermaid
 graph TD
@@ -45,9 +45,9 @@ graph TD
 
 ---
 
-## 🧮 Model Details
+## Model Details
 
-### ✅ Model 1: Baseline Linear Model
+### Model 1: Baseline Linear Model
 
 **Logic:**
 
@@ -59,11 +59,11 @@ price = base_price + α × (occupancy / capacity)
 * Resets every 30-min tumbling window.
 * Simple and interpretable.
 
-📊 **Visualized** using Bokeh's streaming plot.
+**Visualized** using Bokeh's streaming plot.
 
 ---
 
-### ✅ Model 2: Demand-Based Pricing
+### Model 2: Demand-Based Pricing
 
 **Logic:**
 
@@ -86,13 +86,13 @@ price = base_price × clip(norm_demand, 0, 2)
   * Real-time congestion
 * Smoother and more fair than static pricing.
 
-📊 **Streamed Plot** updates every second with new prices per lot.
+**Streamed Plot** updates every second with new prices per lot.
 
 ---
 
 
 
-## 📚 References
+## References
 
 * [Pathway Docs](https://pathway.com/developers/)
 * [Panel + Bokeh Integration](https://panel.holoviz.org)
